@@ -1,0 +1,38 @@
+a{
+    color: darkcyan;
+    padding: 15px;
+    font-size: 20px;
+    font-family: Serif, serif;
+}
+
+@media screen and (min-width: 500px) {
+    .navMobile {
+        display: none;
+    }
+}
+
+img {
+    display: none;
+}
+
+
+@media screen and (max-width: 500px) {
+    .navComputer {
+        display: none;
+    }
+
+    .navMobile {
+        display: none;
+    }
+
+    img {
+        padding-top: 15px;
+        display: block;
+    }
+
+    .chickenLegBis:hover + .navMobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
