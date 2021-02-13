@@ -3,18 +3,24 @@ a{
     padding: 15px;
     font-size: 20px;
     font-family: Serif, serif;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
 }
 
 @media screen and (min-width: 500px) {
     .navMobile {
         display: none;
     }
-}
 
-img {
-    display: none;
-}
 
+    img {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .navComputer {
