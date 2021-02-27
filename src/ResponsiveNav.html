@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <title>ResponsiveNav</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="lightbox2-2.11.3/dist/css/lightbox.css">
+
+
 </head>
 <body>
-<div class="navigation">
-    <ul class="navComputer">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">eShop</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About us</a></li>
-    </ul>
-    <img class="chickenLegBis" src="Hamburger_icon.svg.png" height="50" width="50"/>
-    <ul class="navMobile">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">eShop</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About us</a></li>
-    </ul>
+<script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+<div class="mobile-container">
+    <div class="topnav">
+        <a href="ResponsiveNav.html" class="active">Home</a>
+        <div id="myLinks" class="mobileNav">
+            <a href="#">E-shop</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+        <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+    <h1 class="text">Want to buy super fast cars for good price, you are on right place.</h1>
+    <a data-lightbox="car" href="Lamborghini_Urus_2019_Manhart_800_Yellow_Metallic_571062_1920x1080.jpg"><img class="car" src="Main.jpg" height="141" width="250"/></a>
+    <a data-lightbox="car" href="63eb6bead93559bb06165d288efd8db9.jpg"><img class="car" src="Main2.jpg" height="141" width="250"/></a>
 </div>
+
+<script>
+    function myFunction() {
+        var a = document.getElementById("myLinks");
+        if (a.style.display === "block") {
+            a.style = "";
+        } else a.style.display = "block";
+    }
+</script>
+
 </body>
 </html>

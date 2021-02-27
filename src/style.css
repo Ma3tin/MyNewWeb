@@ -1,44 +1,92 @@
-a{
-    color: darkcyan;
-    padding: 15px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.mobile-container {
+    max-width: 100vw;
+    background-color: #2DABC7;
+    height: 100vh;
+    color: white;
+}
+
+.active {
+    background-color: #0B414F;
+    color: white;
+}
+
+.text {
     font-size: 20px;
-    font-family: Serif, serif;
-    text-decoration: none;
+    text-align: center;
+    color: #E0EDD1;
 }
 
-li {
-    list-style: none;
-    display: inline-block;
-}
+@media screen and (max-width: 1024px) {
 
-@media screen and (min-width: 500px) {
-    .navMobile {
-        display: none;
+    .car {
+        padding: 25px 60px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
     }
 
 
-    img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .navComputer {
-        display: none;
-    }
-
-    .navMobile {
-        display: none;
-    }
-
-    img {
-        padding-top: 15px;
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
         display: block;
     }
 
-    .chickenLegBis:hover + .navMobile {
-        display: flex;
-        flex-direction: column;
+    .topnav #myLinks {
+        display: none;
     }
+
+    .topnav a.burger-icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
 }
 
+@media screen and (min-width: 1024px) {
+
+    .car {
+        padding: 50px 100px;
+    }
+    .burger-icon {
+        display: none;
+    }
+    .mobileNav {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        background-color: #0B414F;
+        text-align: right;
+        width: 100%;
+        padding: 14px 16px;
+
+    }
+    .mobileNav a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+    }
+    .active {
+        font-size: 17px;
+        text-decoration: none;
+    }
+    .topnav {
+        display: flex;
+    }
+
+    .topnav a {
+        padding: 14px 16px;
+    }
+}
