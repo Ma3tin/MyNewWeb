@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Martin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="lightbox2-2.11.3/dist/css/lightbox.css">
+    <link rel="stylesheet" href="haficek.css">
+</head>
+<body>
+<script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+<div class="mobile-container">
+    <div class="topnav">
+        <a href="ResponsiveNav.html" class="active">Home</a>
+        <div id="myLinks" class="mobileNav">
+            <a href="AboutMe.html">About Me</a>
+            <a href="MyWork.html">My Work</a>
+            <a href="Contact.html">Contacts</a>
+            <a title="Github" href="https://github.com/Ma3tin"><i class="fab fa-github"></i></a>
+            <a title="Instagram" href="https://www.instagram.com/ma3tin82/"><i class="fab fa-instagram"></i></a>
+            <a title="Facebook" href="https://www.facebook.com/martym.cz/"><i class="fab fa-facebook-f"></i></a>
+            <a title="Snapchat" href="Snap.html"><i class="fab fa-snapchat-ghost"></i></a>
+            <a title="Doantion" href="Donation.html"><i class="fas fa-dollar-sign"></i></a>
+
+        </div>
+        <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+    <div class="about">
+        <div class="text">
+            <h1 class="mys">About Me</h1>
+            <p class="texticek">My name is Martin Mareš.
+                I study at high school EDUCAnet with focus on information technology in Prague at Chodov,
+                before that I studied at elementary school Campanus in Prague at Chodov too.
+                In my free time i play floorball for team Fat Pipe Florbal Chodov,
+                then i really like playing computer games like CS:GO, minecraft, GTA V and Rocket League.
+                But of course i love to code webs and play with CSS and programming in Java language.
+            </p>
+
+            <p class="texticek">
+                Here you can download my curriculum vitae.
+                <a class="cv" title="My CV" href="MyCV.pdf" download="MartinMarešCV"><i class="fas fa-download"></i></a>
+            </p>
+
+        </div>
+        <a class="photo2" data-lightbox="Pictures" href="IMG_8932%20(1).jpeg"><img src="IMG_8932.jpeg" height="432" width="300"/></a>
+
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var a = document.getElementById("myLinks");
+        if (a.style.display === "block") {
+            a.style = "";
+        } else a.style.display = "block";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="haficek.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+<div class="mobile-container">
+    <div class="topnav">
+        <a href="ResponsiveNav.html" class="active">Home</a>
+        <div id="myLinks" class="mobileNav">
+            <a href="AboutMe.html">About Me</a>
+            <a href="MyWork.html">My Work</a>
+            <a href="Contact.html">Contacts</a>
+            <a title="Github" href="https://github.com/Ma3tin"><i class="fab fa-github"></i></a>
+            <a title="Instagram" href="https://www.instagram.com/ma3tin82/"><i class="fab fa-instagram"></i></a>
+            <a title="Facebook" href="https://www.facebook.com/martym.cz/"><i class="fab fa-facebook-f"></i></a>
+            <a title="Snapchat" href="Snap.html"><i class="fab fa-snapchat-ghost"></i></a>
+            <a title="Doantion" href="Donation.html"><i class="fas fa-dollar-sign"></i></a>
+
+        </div>
+        <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="bubabubu">
+        <div class="halo">
+            <div class="container">
+                <form>
+                    <label for="names">Your full name</label>
+                    <input type="text" id="names" name="firstname" placeholder="Name and Surname">
+
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="E-mail">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="czech-republic">Czech republic</option>
+                        <option value="slovenia">Slovakia</option>
+                    </select>
+
+                    <label for="text">Text</label>
+                    <textarea id="text" name="subject" placeholder="Text" style="height:200px"></textarea>
+
+                    <a href="ResponsiveNav.html"><input type="submit" value="Submit"></a>
+                </form>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440.7023495733342!2d14.511170401408904!3d49.97312540561462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b902b6d9808dd%3A0xbb75764471625d51!2sZa%20Rybn%C3%ADkem%20616%2C%20252%2042%20Jesenice!5e0!3m2!1sen!2scz!4v1610183936121!5m2!1sen!2scz"
+                    width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+
+        </div>
+    </div>
+</div>
+<div class="down">
+    <div class="pes">
+        <table class="tables">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone number</th>
+                <th>E-Mail</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Martin</td>
+                <td>Mareš</td>
+                <td>730 803 183</td>
+                <td>matymares@gmail.com</td>
+                <td>16 y.o.</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var a = document.getElementById("myLinks");
+        if (a.style.display === "block") {
+            a.style = "";
+        } else a.style.display = "block";
+    }
+</script>
+</body>
+</html>

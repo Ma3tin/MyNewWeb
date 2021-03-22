@@ -5,8 +5,7 @@ body {
 
 .mobile-container {
     max-width: 100vw;
-    background-color: #2DABC7;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
 }
 
@@ -18,19 +17,39 @@ body {
 .text {
     font-size: 20px;
     text-align: center;
-    color: #E0EDD1;
+    color: #333333;
+}
+
+.photos {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.photos img {
+    transition: box-shadow 250ms;
+}
+
+.photos img:hover {
+    box-shadow: 10px 10px 10px gray;
+    transition: box-shadow 250ms;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1024px) {
 
     .car {
-        padding: 25px 60px;
+        margin: 25px 0;
     }
 
     .topnav {
         overflow: hidden;
         background-color: #333;
         position: relative;
+        width: 100%;
     }
 
 
@@ -54,12 +73,16 @@ body {
         top: 0;
     }
 
+    .container {
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
 
     .car {
-        padding: 50px 100px;
+        margin: 50px 100px;
     }
     .burger-icon {
         display: none;
@@ -68,10 +91,9 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 17px;
         background-color: #0B414F;
-        text-align: right;
         width: 100%;
         padding: 14px 16px;
-
+        text-align: right;
     }
     .mobileNav a {
         text-decoration: none;
@@ -84,6 +106,7 @@ body {
     }
     .topnav {
         display: flex;
+        width: 100%;
     }
 
     .topnav a {
